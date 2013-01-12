@@ -1,5 +1,4 @@
-LIIT
-====
+# LIIT
 
 ITIL can be for the LEET.
 
@@ -11,15 +10,24 @@ Tested with python :
  
 Tested with django :
 
-* 1.4.1
+* 1.4.1 / 1.4.2 / 1.4.3
 
 ## Installation
+
+* $ cp local_settings_example.py local_settings.py
+* edit local_settings.py with your info
+* django-admin.py compilemessages
 
 ### Troubleshooting
 
 ## Need help ?
 
 Add an issue on github ! ;)
+
+## Before commit
+
+* django-admin.py makemessages -a
+* Check if the _locale/*.po_ files are complete.
 
 ## License
 

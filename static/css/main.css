@@ -1,0 +1,34 @@
+body {
+  background-color: #dddddd;
+  font-size: 14px;
+}
+
+/*
+ * Top menu
+ */
+
+#topmenu {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #9999a4;
+  border-bottom: 1px solid black;
+}
+
+#topmenu_title {
+  margin-left: 50px;
+  font-size: 30px;
+  margin-top: 6px;
+  margin-right: 50px;
+  float: left;
+}
+
+#topmenu a {
+  display: block;
+  margin-top: 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
