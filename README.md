@@ -26,7 +26,7 @@ Add an issue on github ! ;)
 
 ## Before commit
 
-* django-admin.py makemessages -a
+* $ django-admin.py makemessages -a
 * Check if the _locale/*.po_ files are complete.
 
 ## License
