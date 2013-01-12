@@ -18,7 +18,7 @@ urlpatterns = patterns('',
 
     ## Workflow configuration
     url(r'^workflow/$', 'admin.views.workflow_index'),
-    url(r'^type/(?P<type_id>\d+)/workflow/$', 'admin.views.workflow_edit'),
-    url(r'^type/(?P<type_id>\d+)/workflow/update$', 'admin.views.workflow_update'),
+    url(r'^workflow/type/(?P<type_id>\d+)/edit/$', 'admin.views.workflow_edit'),
+    url(r'^workflow/type/(?P<type_id>\d+)/update/$', 'admin.views.workflow_update'),
 
 )
