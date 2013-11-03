@@ -1,17 +1,14 @@
 from django.conf.urls import patterns, include, url
-import admin.urls
+
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-
-    url(r'^$', 'home.views.index'),
-
     # Examples:
-    # url(r'^$', 'LIIT.views.home', name='home'),
-    # url(r'^LIIT/', include('LIIT.foo.urls')),
-    url(r'^admin/', include(admin.urls)),
+    # url(r'^$', 'liit.views.home', name='home'),
+    # url(r'^liit/', include('liit.foo.urls')),
+
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
