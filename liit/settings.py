@@ -130,7 +130,7 @@ INSTALLED_APPS = (
     'structure'
 )
 
-AUTH_USER_MODEL = 'auth.User'
+AUTH_USER_MODEL = 'structure.User'
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
 
