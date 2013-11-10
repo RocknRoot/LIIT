@@ -13,7 +13,7 @@ class IssueStatus(models.Model):
 
 class Issue(models.Model):
     project = models.ForeignKey('structure.Project')
-    status = models.ForeignKey(_('Issue\'s status'), 'IssueStatus')
+    status = models.ForeignKey('IssueStatus', verbose_name=_('Issue\'s status'))
     user_reporter = models.ForeignKey('structure.User', related_name='reporter')
     user_assigned = models.ForeignKey('structure.User', related_name='assigned')
     name = models.CharField(_('Name'), max_length=100)

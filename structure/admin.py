@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.models import Group
 from django.contrib.sites.models import Site
 from structure.models import User, Organization, Member, Project, Role, Assignment, Contract
+from incident.models import IssueStatus
 from django.utils.translation import ugettext_lazy as _
 
 class UserAdmin(admin.ModelAdmin):
@@ -39,8 +40,11 @@ class AssignmentInline(admin.TabularInline):
                 field.queryset = field.queryset.filter(organization=request._obj_.organization)
         return field
 
+class IssueStatusInline(admin.TabularInline):
+    model = IssueStatus
+
 class ProjectAdmin(admin.ModelAdmin):
-    inlines = [AssignmentInline]
+    inlines = [AssignmentInline, IssueStatusInline]
 
     def get_inline_instances(self, request, obj=None):
         if obj is None:
