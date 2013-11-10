@@ -6,11 +6,11 @@ ITIL can be for the LEET.
 
 Tested with python :
 
-* 2.7.3
+* 2.7.5
  
 Tested with django :
 
-* 1.4.1 / 1.4.2 / 1.4.3
+* 1.5.4
 
 ## Installation
 

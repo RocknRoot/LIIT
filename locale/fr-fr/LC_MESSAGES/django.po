@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-10 14:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: incident/models.py:6 incident/models.py:19 structure/models.py:11
+#: structure/models.py:27 structure/models.py:36 structure/models.py:53
+msgid "Name"
+msgstr "Nom"
+
+#: incident/models.py:7
+msgid "Can clients use it ?"
+msgstr "Les clients peuvent-ils l'utiliser ?"
+
+#: incident/models.py:11
+msgid "Issue status"
+msgstr "Statut de ticket"
+
+#: incident/models.py:12
+msgid "Issue statuses"
+msgstr "Statuts de ticket"
+
+#: incident/models.py:20
+msgid "Description"
+msgstr "Description"
+
+#: structure/admin.py:9
+msgid "Login"
+msgstr "Connexion"
+
+#: structure/admin.py:12
+msgid "Basic information"
+msgstr "Informations basiques"
+
+#: structure/admin.py:15
+msgid "Liit"
+msgstr "LIIT"
+
+#: structure/models.py:6
+msgid "Is resource ?"
+msgstr "Est une ressource ?"
+
+#: structure/models.py:15
+msgid "Organization"
+msgstr "Organisation"
+
+#: structure/models.py:23
+msgid "Member"
+msgstr "Membre"
+
+#: structure/models.py:31
+msgid "Project"
+msgstr "Projet"
+
+#: structure/models.py:35
+#, fuzzy
+msgid "Is resource-type role ?"
+msgstr "Est une ressource ?"
+
+#: structure/models.py:40
+msgid "Role"
+msgstr "Rôle"
+
+#: structure/models.py:49
+msgid "Assignment"
+msgstr "Affectation"
+
+#: structure/models.py:57
+msgid "Contract"
+msgstr "Contrat"
