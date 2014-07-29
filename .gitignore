@@ -3,3 +3,4 @@
 *.pyc
 *.mo
 local_settings.py
+*.sqlite3
