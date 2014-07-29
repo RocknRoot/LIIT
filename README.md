@@ -4,13 +4,8 @@ ITIL can be for the LEET.
 
 ## Requirements
 
-Tested with python :
-
-* 2.7.5
- 
-Tested with django :
-
-* 1.5.4
+* python ~ 2.7
+* django ~ 1.5
 
 ## Installation
 

@@ -2,56 +2,33 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.utils.translation import ugettext_lazy as _
 
+class Organization(models.Model):
+    name = models.CharField(_('Name'), max_length=80)
+    slug = models.SlugField()
+    def __unicode__(self):
+        return self.name
+
+class Team(models.Model):
+    name = models.CharField(_('Name'), max_length=80)
+    organization = models.ForeignKey('Organization')
+    def __unicode__(self):
+        return self.name
+
 class User(AbstractUser):
-    is_tech = models.BooleanField(_('Is resource ?'), default=False)
+    teams = models.ManyToManyField(Team, blank=True, related_name='users')
     def __unicode__(self):
         return self.username
 
-class Organization(models.Model):
-    name = models.CharField(_('Name'), max_length=100)
-    def __unicode__(self):
-        return self.name
-    class Meta:
-        verbose_name = _('Organization')
-
-class Member(models.Model):
-    user = models.ForeignKey('User')
-    organization = models.ForeignKey('Organization')
-    def __unicode__(self):
-        return self.user.username + ' - ' + self.organization.name
-    class Meta:
-        verbose_name = _('Member')
-
-class Project(models.Model):
-    organization = models.ForeignKey('Organization')
-    name = models.CharField(_('Name'), max_length=100)
-    def __unicode__(self):
-        return self.name
-    class Meta:
-        verbose_name = _('Project')
-
-class Role(models.Model):
-    organization = models.ForeignKey('Organization')
-    is_tech = models.BooleanField(_('Is resource-type role ?'), default=False)
-    name = models.CharField(_('Name'), max_length=100)
-    def __unicode__(self):
-        return self.organization.name + ' - ' + self.name
-    class Meta:
-        verbose_name = _('Role')
-
-class Assignment(models.Model):
-    user = models.ForeignKey('User')
-    project = models.ForeignKey('Project')
-    role =  models.ForeignKey('Role')
-    def __unicode__(self):
-        return self.user.username + ' - ' + self.project.name + ' - ' . self.role.name
-    class Meta:
-        verbose_name = _('Assignment')
-
 class Contract(models.Model):
-    project = models.ForeignKey('Project')
-    name = models.CharField(_('Name'), max_length=100)
+    name = models.CharField(_('Name'), max_length=150)
     def __unicode__(self):
         return self.name
-    class Meta:
-        verbose_name = _('Contract')
+
+class ContractOrganization(models.Model):
+    contract = models.ForeignKey('Contract')
+    organization = models.ForeignKey('Organization')
+    default_team = models.ForeignKey('Team')
+
+class ContractTeam(models.Model):
+    contract = models.ForeignKey('Contract')
+    team = models.ForeignKey('Team')
