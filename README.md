@@ -1,4 +1,4 @@
-# LIIT
+# LIIT  [![Build Status](https://api.travis-ci.org/RocknRoot/LIIT.png?branch=master)](https://travis-ci.org/RocknRoot/LIIT)
 
 ITIL can be for the LEET.
 
