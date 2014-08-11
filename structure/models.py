@@ -15,9 +15,10 @@ class Team(models.Model):
         return self.name
 
 class User(AbstractUser):
+    name = models.CharField(_('Name'), max_length=40)
     teams = models.ManyToManyField(Team, blank=True, related_name='users')
     def __unicode__(self):
-        return self.username
+        return self.name
 
 class Contract(models.Model):
     name = models.CharField(_('Name'), max_length=150)
