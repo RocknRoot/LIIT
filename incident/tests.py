@@ -12,7 +12,7 @@ class IssueTest(TestCase):
         self.organization_t = Organization.objects.create(name="Test_Organization")
         self.team_t = Team.objects.create(name="Test_Team",
                                           organization=self.organization_t)
-        self.user_t = User.objects.create(name="Test_User")
+        self.user_t = User.objects.create(username="Test_User")
         self.team_t.users.add(self.user_t)
         self.contract_t = Contract.objects.create(name="Test_Contract")
 
@@ -33,7 +33,7 @@ class IssueTest(TestCase):
                                         assigned_user=self.user_t)
         self.assertEqual(issue_t.title,'LIIT')
         self.assertEqual(issue_t.description,'Do you like it ?')
-        self.assertEqual(issue_t.assigned_user.name, "Test_User")
+        self.assertEqual(issue_t.assigned_user.username, "Test_User")
         self.assertEqual(issue_t.assigned_team.name, "Test_Team")
         self.assertIsNotNone(issue_t.created_at)
 
