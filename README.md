@@ -6,9 +6,13 @@ ITIL can be for the LEET.
 
 * python ~ 2.7
 * django ~ 1.5
+* django-nose
+* south
 
 ## Installation
 
+* pip install south
+* pip install django-nose
 * $ cp local_settings_example.py local_settings.py
 * edit local_settings.py with your info
 * django-admin.py compilemessages
@@ -22,6 +26,7 @@ Add an issue on github ! ;)
 ## Before commit
 
 * $ django-admin.py makemessages -a
+* $ python manage.py test
 * Check if the _locale/*.po_ files are complete.
 
 ## License
