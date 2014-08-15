@@ -126,9 +126,12 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'south',
+    'django_nose',
     'incident',
     'structure'
 )
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 AUTH_USER_MODEL = 'structure.User'
 
