@@ -128,7 +128,7 @@ INSTALLED_APPS = (
     'south',
     'django_nose',
     'incident',
-    'structure'
+    'structure',
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
