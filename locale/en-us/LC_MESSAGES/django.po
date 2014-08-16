@@ -1,64 +1,40 @@
-#: incident/models.py:6 incident/models.py:19 structure/models.py:11
-#: structure/models.py:27 structure/models.py:36 structure/models.py:53
-msgid "Name"
+#: incident/models.py:5
+msgid "Title"
 msgstr ""
 
-#: incident/models.py:7
-msgid "Can clients use it ?"
-msgstr ""
-
-#: incident/models.py:11
-msgid "Issue status"
-msgstr ""
-
-#: incident/models.py:12
-msgid "Issue statuses"
-msgstr ""
-
-#: incident/models.py:20
+#: incident/models.py:6
 msgid "Description"
 msgstr ""
 
-#: structure/admin.py:9
+#: structure/admin.py:10
 msgid "Login"
 msgstr ""
 
-#: structure/admin.py:12
+#: structure/admin.py:13
 msgid "Basic information"
 msgstr ""
 
-#: structure/admin.py:15
+#: structure/admin.py:16
 msgid "Liit"
 msgstr "LIIT"
 
-#: structure/models.py:6
-msgid "Is resource ?"
-msgstr ""
-
-#: structure/models.py:15
-msgid "Organization"
-msgstr ""
-
-#: structure/models.py:23
-msgid "Member"
-msgstr ""
-
-#: structure/models.py:31
-msgid "Project"
+#: structure/models.py:6 structure/models.py:12 structure/models.py:18
+#: structure/models.py:24
+msgid "Name"
 msgstr ""
 
 #: structure/models.py:35
-msgid "Is resource-type role ?"
+msgid "Contracted organization"
 msgstr ""
 
-#: structure/models.py:40
-msgid "Role"
+#: structure/models.py:36
+msgid "Contracted organizations"
 msgstr ""
 
-#: structure/models.py:49
-msgid "Assignment"
+#: structure/models.py:44
+msgid "Contracted team"
 msgstr ""
 
-#: structure/models.py:57
-msgid "Contract"
+#: structure/models.py:45
+msgid "Contracted teams"
 msgstr ""

@@ -7,3 +7,4 @@ class Issue(models.Model):
     contract = models.ForeignKey('structure.Contract')
     assigned_team = models.ForeignKey('structure.Team')
     assigned_user = models.ForeignKey('structure.User', null=True)
+    created_at = models.DateTimeField(auto_now_add=True)

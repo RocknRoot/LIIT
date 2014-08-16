@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-10 14:04+0100\n"
+"POT-Creation-Date: 2014-08-11 19:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,68 +17,75 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: incident/models.py:6 incident/models.py:19 structure/models.py:11
-#: structure/models.py:27 structure/models.py:36 structure/models.py:53
-msgid "Name"
-msgstr "Nom"
+#: incident/models.py:5
+msgid "Title"
+msgstr "Titre"
 
-#: incident/models.py:7
-msgid "Can clients use it ?"
-msgstr "Les clients peuvent-ils l'utiliser ?"
-
-#: incident/models.py:11
-msgid "Issue status"
-msgstr "Statut de ticket"
-
-#: incident/models.py:12
-msgid "Issue statuses"
-msgstr "Statuts de ticket"
-
-#: incident/models.py:20
+#: incident/models.py:6
 msgid "Description"
 msgstr "Description"
 
-#: structure/admin.py:9
+#: structure/admin.py:10
 msgid "Login"
 msgstr "Connexion"
 
-#: structure/admin.py:12
+#: structure/admin.py:13
 msgid "Basic information"
 msgstr "Informations basiques"
 
-#: structure/admin.py:15
+#: structure/admin.py:16
 msgid "Liit"
 msgstr "LIIT"
 
-#: structure/models.py:6
-msgid "Is resource ?"
-msgstr "Est une ressource ?"
-
-#: structure/models.py:15
-msgid "Organization"
-msgstr "Organisation"
-
-#: structure/models.py:23
-msgid "Member"
-msgstr "Membre"
-
-#: structure/models.py:31
-msgid "Project"
-msgstr "Projet"
+#: structure/models.py:6 structure/models.py:12 structure/models.py:18
+#: structure/models.py:24
+msgid "Name"
+msgstr "Nom"
 
 #: structure/models.py:35
 #, fuzzy
-msgid "Is resource-type role ?"
-msgstr "Est une ressource ?"
+msgid "Contracted organization"
+msgstr "Organisation"
 
-#: structure/models.py:40
-msgid "Role"
-msgstr "Rôle"
+#: structure/models.py:36
+#, fuzzy
+msgid "Contracted organizations"
+msgstr "Organisation"
 
-#: structure/models.py:49
-msgid "Assignment"
-msgstr "Affectation"
-
-#: structure/models.py:57
-msgid "Contract"
+#: structure/models.py:44
+#, fuzzy
+msgid "Contracted team"
 msgstr "Contrat"
+
+#: structure/models.py:45
+#, fuzzy
+msgid "Contracted teams"
+msgstr "Contrat"
+
+#~ msgid "Can clients use it ?"
+#~ msgstr "Les clients peuvent-ils l'utiliser ?"
+
+#~ msgid "Issue status"
+#~ msgstr "Statut de ticket"
+
+#~ msgid "Issue statuses"
+#~ msgstr "Statuts de ticket"
+
+#~ msgid "Is resource ?"
+#~ msgstr "Est une ressource ?"
+
+#~ msgid "Member"
+#~ msgstr "Membre"
+
+#~ msgid "Project"
+#~ msgstr "Projet"
+
+#, fuzzy
+#~ msgid "Is resource-type role ?"
+#~ msgstr "Est une ressource ?"
+
+#~ msgid "Role"
+#~ msgstr "Rôle"
+
+#~ msgid "Assignment"
+#~ msgstr "Affectation"
