@@ -4,7 +4,6 @@ from django.utils.translation import ugettext_lazy as _
 
 class Organization(models.Model):
     name = models.CharField(_('Name'), max_length=80)
-    slug = models.SlugField()
     def __unicode__(self):
         return self.name
 
@@ -21,6 +20,7 @@ class User(AbstractUser):
 
 class Contract(models.Model):
     name = models.CharField(_('Name'), max_length=150)
+    organizations = models.ManyToManyField(Organization, through='ContractOrganization')
     def __unicode__(self):
         return self.name
 
