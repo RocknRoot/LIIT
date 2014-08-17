@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 
 
 def ulogin(request):
-    state = "Please log in below..."
+    state = "Please log in..."
     username = password = ''
     if request.POST:
         username = request.POST.get('username')
