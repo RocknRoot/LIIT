@@ -13,8 +13,8 @@ urlpatterns = patterns('',
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
-    (r'^login/$', 'auth.views.ulogin'),
-    (r'^logout/$', 'auth.views.ulogout'),
+    (r'^login/$', 'structure.views.user.custom_login'),
+    (r'^logout/$', 'structure.views.user.custom_logout'),
     (r'^register/$', 'structure.views.user.register'),
     (r'^home/$', 'structure.views.user.index'),
 )
