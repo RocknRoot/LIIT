@@ -27,6 +27,8 @@ def register(request):
     return render(request, 'users/register.html', { 'form': form, })
 
 def custom_login(request):
+    if request.user.is_authenticated():
+        return redirect('/home')
     state = None
     username = password = ''
     if request.POST:
