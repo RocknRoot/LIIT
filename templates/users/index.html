@@ -1,5 +1,12 @@
 {% extends "base.html" %}
+
+{% load i18n %}
+
+{% block nav %}
+    {% include "users/navbar.html" %}
+{% endblock %}
+
 {% block content %}
-  ~ sweet ~
-  <a href="/logout">Aurevoir !</a>
+    ~ sweet ~
+    <a href="/logout">Aurevoir !</a>
 {% endblock %}
