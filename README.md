@@ -1,18 +1,15 @@
-# LIIT  [![Build Status](https://api.travis-ci.org/RocknRoot/LIIT.png?branch=master)](https://travis-ci.org/RocknRoot/LIIT)
+# LIIT [![Build Status](https://api.travis-ci.org/RocknRoot/LIIT.png?branch=master)](https://travis-ci.org/RocknRoot/LIIT)
 
 ITIL can be for the LEET.
 
 ## Requirements
 
 * python ~ 2.7
-* django ~ 1.5
-* django-nose
-* south
+* pip dependencies are in the requirements.txt file
 
 ## Installation
 
-* pip install south
-* pip install django-nose
+* $ pip install -r requirements.txt
 * $ cp local_settings_example.py local_settings.py
 * edit local_settings.py with your info
 * django-admin.py compilemessages
@@ -23,7 +20,9 @@ ITIL can be for the LEET.
 
 Add an issue on github ! ;)
 
-## Before commit
+## Contributing
+
+### Before commit
 
 * $ django-admin.py makemessages -a
 * $ python manage.py test
@@ -31,16 +30,4 @@ Add an issue on github ! ;)
 
 ## License
 
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-       Version 2, December 2004
-
-Copyright (C) 2012 Thibaut Deloffre <tib@rocknroot.org>
-
-Everyone is permitted to copy and distribute verbatim or modified
-copies of this license document, and changing it is allowed as long
-as the name is changed.
-
-DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
-0. You just DO WHAT THE FUCK YOU WANT TO.
+LIIT is released under the New BSD License.
