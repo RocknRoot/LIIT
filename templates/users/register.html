@@ -21,6 +21,9 @@
                             <label for="username" class="col-sm-4 control-label">{{ form.username.label }}</label>
                             <div class="col-sm-8">
                                 <input type="text" name="username" class="form-control" value="{% if form.username.value %}{{ form.username.value }}{% endif %}" />
+                                <p class="help-block">
+                                    {{ form.username.help_text }}
+                                </p>
                             </div>
                         </div>
 

@@ -11,7 +11,7 @@ class Team(models.Model):
     name = models.CharField(_('Name'), max_length=80)
     organization = models.ForeignKey('Organization')
     def __unicode__(self):
-        return self.name
+        return self.name + ' - ' + self.organization.name
 
 class User(AbstractUser):
     teams = models.ManyToManyField(Team, blank=True, related_name='users')
