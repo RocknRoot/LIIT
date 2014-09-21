@@ -17,4 +17,5 @@ urlpatterns = patterns('',
     (r'^logout/$', 'structure.views.user.custom_logout'),
     (r'^register/$', 'structure.views.user.register'),
     (r'^home/$', 'structure.views.user.index'),
+    (r'^$', 'structure.views.user.index'),
 )
