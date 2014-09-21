@@ -15,6 +15,9 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
+            {% if user.is_staff %}
+                <li><a href="/admin">{% trans "Administration" %}</a></li>
+            {% endif %}
             <li><a href="/logout">{% trans "Log out" %}</a></li>
         </ul>
 
