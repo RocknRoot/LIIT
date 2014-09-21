@@ -6,8 +6,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: structure/admin.py:14 templates/auth/login.html:10
-#: templates/auth/login.html.py:39
+#: structure/admin.py:14 templates/users/login.html:10
 msgid "Login"
 msgstr ""
 
@@ -17,6 +16,18 @@ msgstr ""
 
 #: structure/admin.py:20
 msgid "Teams"
+msgstr ""
+
+#: structure/forms.py:8 templates/users/login.html:33
+msgid "Password"
+msgstr ""
+
+#: structure/forms.py:10
+msgid "Password confirmation"
+msgstr ""
+
+#: structure/forms.py:22
+msgid "Passwords don't match"
 msgstr ""
 
 #: structure/forms.py:24
@@ -43,12 +54,44 @@ msgstr ""
 msgid "Contracted teams"
 msgstr ""
 
-#: templates/auth/login.html:24
+#: structure/views/user.py:23
+msgid "You have successfully registered! You can now log in."
+msgstr ""
+
+#: structure/views/user.py:41
+msgid "You're successfully logged in!"
+msgstr ""
+
+#: structure/views/user.py:44
+msgid "Your account is inactive, please contact the site admin."
+msgstr ""
+
+#: templates/users/login.html:26
 msgid "Username"
 msgstr ""
 
-#: templates/auth/login.html:31
-msgid "Password"
+#: templates/users/login.html:41
+msgid "Log in"
+msgstr ""
+
+#: templates/users/login.html:49
+msgid "You don't have an account? Please register."
+msgstr ""
+
+#: templates/users/navbar.html:18
+msgid "Log out"
+msgstr ""
+
+#: templates/users/register.html:10
+msgid "Create an account"
+msgstr ""
+
+#: templates/users/register.html:48
+msgid "Register"
+msgstr ""
+
+#: templates/users/register.html:56
+msgid "You already have an account? Please login."
 msgstr ""
 
 #: venv/lib/python2.7/site-packages/django/contrib/sitemaps/apps.py:8
