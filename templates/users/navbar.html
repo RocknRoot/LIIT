@@ -1,3 +1,22 @@
-<nav class="nav">
-    lol
+{% load i18n %}
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <a href="/home" class="navbar-brand">
+                Company
+                <small>/LIIT</small>
+            </a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/logout">{% trans "Log out" %}</a></li>
+        </ul>
+
+    </div>
 </nav>
