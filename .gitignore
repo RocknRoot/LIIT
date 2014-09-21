@@ -4,5 +4,7 @@
 *.mo
 local_settings.py
 *.sqlite3
+*.sqlite
 *.db
 *.swp
+venv/
